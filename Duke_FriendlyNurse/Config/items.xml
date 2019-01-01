@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+<insertAfter xpath="/items/item[@name='meleeHandZombie01']">
+<item name="meleeHandNurse">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1,buffHealHealth"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="10" tags="primary"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="16" tags="primary"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffHealHealth"/>		
+	</effect_group>
+</item>
+</insertAfter>		
+</configs>

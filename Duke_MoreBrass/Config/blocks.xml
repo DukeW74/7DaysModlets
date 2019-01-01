@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+<!-- Want more brass?  Change the count="1" to a higher # -->
+<insertAfter xpath="/blocks/block[@name='houseFrontDoor1_v1']/drop[@event='Harvest' and @name='resourceWood']" >
+		<drop event="Harvest" name="resourceDoorKnob" count="1" prob="1" tag="allHarvest"/>
+</insertAfter>
+</configs>

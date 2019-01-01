@@ -1,0 +1,2 @@
+resourceFuelLog,items,Book,New,Fuel Log,,,,,
+resourceFuelLogDesc,items,Book,New,A great fuel source. (10 minute burn time),,,,,

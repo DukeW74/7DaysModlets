@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+			
+<config>
+<set xpath="/buffs/buff[@name='buffRadiation3']/effect_group/passive_effect[@name='HealthChangeOT'][@operation='base_subtract']/@operation">base_add</set>
+<set xpath="/buffs/buff[@name='buffRadiation3']/effect_group/passive_effect[@name='HealthChangeOT'][@operation='base_subtract']/@operation">base_add</set>
+<set xpath="/buffs/buff[@name='buffRadiation3']/effect_group/passive_effect[@name='HealthChangeOT'][@operation='base_subtract']/@operation">base_add</set>
+</config>

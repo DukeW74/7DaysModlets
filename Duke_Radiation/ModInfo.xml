@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Duke Radiation" />
+		<Description value="Removes the debuff of going into radiation in RWG worlds" />
+		<Author value="Duke" />
+		<Version value="A17b240v1.0" />
+		<Website value="https://7daystodie.com/forums/forumdisplay.php?61-Game-Mods" />
+	</ModInfo>
+</xml>

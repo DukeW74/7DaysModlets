@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+<append xpath="/items">
+<item name="resourceFuelLog"> <!-- scrap material -->
+    <property name="DescriptionKey" value="resourceFuelLogDesc"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mwood"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
+	<property name="FuelValue" value="600"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
+</append>
+</configs>

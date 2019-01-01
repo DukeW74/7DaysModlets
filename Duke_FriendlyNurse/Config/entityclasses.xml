@@ -1,0 +1,4 @@
+<configs>
+                                 <!-- Set nurse to have her own hand type -->
+	<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='HandItem']/@value">meleeHandNurse</set>
+</configs>
