@@ -1,0 +1,26 @@
+<configs>
+	<append xpath="/xui/ruleset">
+<!-- Oven -->
+<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">
+	<window name="windowCraftingList" />
+	<window name="craftingInfoPanel" />
+	<window name="windowCraftingQueue" />
+	<window name="windowToolsCampfire" />
+	<window name="windowFuel" />
+	<window name="windowOutput" />
+	<window name="windowNonPagingHeader" />
+</window_group>
+<!-- Oven End -->
+<!-- Charcoal Grill -->
+<window_group name="workstation_workstationCharcoalGrill" controller="XUiC_WorkstationWindowGroup">
+	<window name="windowCraftingList" />
+	<window name="craftingInfoPanel" />
+	<window name="windowCraftingQueue" />
+	<window name="windowToolsCampfire" />
+	<window name="windowFuel" />
+	<window name="windowOutput" />
+	<window name="windowNonPagingHeader" />
+</window_group>
+<!-- Charcoal Grill End -->
+	</append>
+</configs>

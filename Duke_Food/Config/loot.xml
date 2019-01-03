@@ -1,0 +1,15 @@
+<configs>
+
+<remove xpath="/lootcontainers/lootgroup[@name='coldfood']/item[@name='foodMeatStew']" />
+<remove xpath="/lootcontainers/lootgroup[@name='coldfood']/item[@name='foodRawMeat']" />
+	
+<append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+	<item name="foodDeerMeatStew"/>
+	<item name="foodRawDeerMeat" count="5,10"/>
+</append>
+	
+<append xpath="/lootcontainers">
+	<lootcontainer id="129" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard"></lootcontainer>
+</append>
+
+</configs>

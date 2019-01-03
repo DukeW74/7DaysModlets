@@ -1,0 +1,21 @@
+<configs>
+	<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawDeerMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawDeerMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawRabbitMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawChickenMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawBearMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawWolfMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawWolfMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawSnakeMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawBoarMeat</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@name">foodRawBoarMeat</set>
+</configs>

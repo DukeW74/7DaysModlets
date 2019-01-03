@@ -1,0 +1,337 @@
+<configs>
+<!--
+The section below removes the generic RawMeat recipes from the world.
+If you are using this on an already established world I suggest you comment the section out or delete it.
+-->
+<remove xpath="/recipes/recipe[@name='foodCharredMeat']" />
+<remove xpath="/recipes/recipe[@name='foodGrilledMeat']" />
+<remove xpath="/recipes/recipe[@name='foodBoiledMeat']" />
+<remove xpath="/recipes/recipe[@name='foodMeatStew']" />
+<remove xpath="/recipes/recipe[@name='foodChiliDog']" />
+<remove xpath="/recipes/recipe[@name='foodBaconAndEggs']" />
+<remove xpath="/recipes/recipe[@name='foodSteakAndPotato']" />
+
+<!--
+The section above removes the generic RawMeat recipes from the world.
+If you are using this on an already established world I suggest you comment the section out or delete it.
+-->
+
+<append xpath="/recipes" >
+
+<recipe name="workstationOven" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="20" />
+	<ingredient name="toolCookingGrill" count="2" />
+</recipe>
+<recipe name="workingGraniteSink" count="1" craft_area="workbench">
+	<ingredient name="resourceWood" count="15" />
+	<ingredient name="resourceForgedIron" count="10" />
+	<ingredient name="resourceMetalPipe" count="5" />
+</recipe>
+<recipe name="workstationCharcoalGrill" count="1" >
+	<ingredient name="resourceScrapIron" count="200" />
+	<ingredient name="toolCookingGrill" count="1" />
+</recipe>
+<recipe name="workingWaterCooler" count="1" craft_area="workbench">
+	<ingredient name="resourceBrokenGlass" count="15" />
+	<ingredient name="resourceForgedIron" count="10" />
+	<ingredient name="resourceMetalPipe" count="5" />
+</recipe>
+
+<recipe name="foodCharredBearMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawBearMeat" count="5"/>
+</recipe>
+<recipe name="foodGrilledBearMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="5"/>
+</recipe>
+<recipe name="foodBoiledBearMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodBearMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredDeerMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawDeerMeat" count="5" />
+</recipe>
+<recipe name="foodGrilledDeerMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+	<ingredient name="foodRawDeerMeat" count="5" />
+</recipe>
+<recipe name="foodBoiledDeerMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodRawDeerMeat" count="5" />
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodDeerMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodRawDeerMeat" count="10" />
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+</recipe>
+<recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCanChili" count="1"/>
+	<ingredient name="foodCornBread" count="1"/>
+	<ingredient name="foodRawChickenMeat" count="5"/>
+</recipe>
+<recipe name="foodCharredWolfMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawWolfMeat" count="5"/>
+</recipe>
+<recipe name="foodGrilledWolfMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="5"/>
+</recipe>
+<recipe name="foodBoiledWolfMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodWolfMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredBoarMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawBoarMeat" count="5"/>
+</recipe>
+<recipe name="foodGrilledBoarMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="5"/>
+</recipe>
+<recipe name="foodBoiledBoarMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodBoarMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodEgg" count="2"/>
+	<ingredient name="foodRawBoarMeat" count="5"/>
+</recipe>
+<recipe name="foodCharredSnakeMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawSnakeMeat" count="5"/>
+</recipe>
+<recipe name="foodGrilledSnakeMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="5"/>
+</recipe>
+<recipe name="foodBoiledSnakeMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodSnakeMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredChickenMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawChickenMeat" count="5"/>
+</recipe>
+<recipe name="foodGrilledChickenMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="5"/>
+</recipe>
+<recipe name="foodBoiledChickenMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodChickenMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredRabbitMeat" count="1" craft_area="campfire">
+	<ingredient name="foodRawRabbitMeat" count="5"/>
+</recipe>
+<recipe name="foodGrilledRabbitMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="5"/>
+</recipe>
+<recipe name="foodBoiledRabbitMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodRabbitMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredBearMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawBearMeat" count="2"/>
+</recipe>
+<recipe name="foodGrilledBearMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="2"/>
+</recipe>
+<recipe name="foodBoiledBearMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodBearMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredDeerMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawDeerMeat" count="2" />
+</recipe>
+<recipe name="foodGrilledDeerMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="2" />
+</recipe>
+<recipe name="foodBoiledDeerMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="2" />
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodDeerMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="5" />
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredWolfMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawWolfMeat" count="2"/>
+</recipe>
+<recipe name="foodGrilledWolfMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="2"/>
+</recipe>
+<recipe name="foodBoiledWolfMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodWolfMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredBoarMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawBoarMeat" count="2"/>
+</recipe>
+<recipe name="foodGrilledBoarMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="2"/>
+</recipe>
+<recipe name="foodBoiledBoarMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodBoarMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodBaconAndEggs" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodEgg" count="2"/>
+	<ingredient name="foodRawBoarMeat" count="2"/>
+</recipe>
+<recipe name="foodCharredSnakeMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawSnakeMeat" count="2"/>
+</recipe>
+<recipe name="foodGrilledSnakeMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="2"/>
+</recipe>
+<recipe name="foodBoiledSnakeMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodSnakeMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredChickenMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawChickenMeat" count="2"/>
+</recipe>
+<recipe name="foodGrilledChickenMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="2"/>
+</recipe>
+<recipe name="foodBoiledChickenMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodChickenMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodCharredRabbitMeat" count="1" craft_area="workstationOven">
+	<ingredient name="foodRawRabbitMeat" count="2"/>
+</recipe>
+<recipe name="foodGrilledRabbitMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="2"/>
+</recipe>
+<recipe name="foodBoiledRabbitMeat" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+<recipe name="foodRabbitMeatStew" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="foodSteakAndPotato" count="1" craft_area="workstationOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+</recipe>
+<recipe name="foodChiliDog" count="1" craft_area="workstationOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCanChili" count="1"/>
+	<ingredient name="foodCornBread" count="1"/>
+	<ingredient name="foodRawChickenMeat" count="2"/>
+</recipe>
+<recipe name="foodCharredBearMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawBearMeat" count="3"/>
+</recipe>
+<recipe name="foodGrilledBearMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawBearMeat" count="3"/>
+</recipe>
+<recipe name="foodCharredDeerMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawDeerMeat" count="3" />
+</recipe>
+<recipe name="foodGrilledDeerMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="3" />
+</recipe>
+<recipe name="foodSteakAndPotato" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawDeerMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+</recipe>
+<recipe name="foodCharredWolfMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawWolfMeat" count="3"/>
+</recipe>
+<recipe name="foodGrilledWolfMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawWolfMeat" count="3"/>
+</recipe>
+<recipe name="foodCharredBoarMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawBoarMeat" count="3"/>
+</recipe>
+<recipe name="foodGrilledBoarMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawBoarMeat" count="3"/>
+</recipe>
+<recipe name="foodCharredSnakeMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawSnakeMeat" count="3"/>
+</recipe>
+<recipe name="foodGrilledSnakeMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawSnakeMeat" count="3"/>
+</recipe>
+<recipe name="foodCharredChickenMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawChickenMeat" count="3"/>
+</recipe>
+<recipe name="foodGrilledChickenMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawChickenMeat" count="3"/>
+</recipe>
+<recipe name="foodCharredRabbitMeat" count="1" craft_area="workstationCharcoalGrill">
+	<ingredient name="foodRawRabbitMeat" count="3"/>
+</recipe>
+<recipe name="foodGrilledRabbitMeat" count="1" craft_area="workstationCharcoalGrill" tags="learnable">
+	<ingredient name="foodRawRabbitMeat" count="3"/>
+</recipe>
+</append>
+</configs>
