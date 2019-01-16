@@ -1,0 +1,20 @@
+<configs>
+
+<append xpath="/recipes" >
+<recipe name="chickenCoop" count="1">
+	<ingredient name="resourceWood" count="5" />
+	<ingredient name="resourceYuccaFibers" count="5" />
+</recipe>
+</append>
+</configs>
+
+<!-- 
+<recipe name="animalFeed" count="2">
+	<ingredient name="hayBaleBlock" count="3" />
+</recipe>
+<recipe name="chickenCoop" count="1">
+	<ingredient name="resourceWood" count="10" />
+	<ingredient name="resourceYuccaFibers" count="10" />
+	<ingredient name="animalFeed" count="1" />
+</recipe> 
+-->

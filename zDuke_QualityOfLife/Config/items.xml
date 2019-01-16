@@ -1,0 +1,252 @@
+<configs>
+<insertAfter xpath="/items/item[@name='meleeBoneShiv']/property[@name='SoundDestroy']">
+	<property name="FuelValue" value="10"/>
+	<property name="RepairTools" value="resourceFemur"/>
+</insertAfter>
+	
+<insertAfter xpath="/items/item[@name='resourceFemur']/property[@name='CraftingSkillGroup']">
+	<property name="FuelValue" value="10"/>
+</insertAfter>
+
+<insertAfter xpath="/items/item[@name='resourceFemur']/property[@name='Weight']">
+	<property name="RepairAmount" value="80"/>
+</insertAfter>
+
+<append xpath="/items/item[@name='modMeleeBunkerBusterSchematic']">
+	<property name="CustomIcon" value="modMeleeBunkerBusterSchematic" />
+</append>
+	
+<append xpath="/items/item[@name='modMeleeIronBreakerSchematic']">
+	<property name="CustomIcon" value="modMeleeIronBreakerSchematic" />
+</append>	
+
+<append xpath="/items/item[@name='modMeleeWoodSplitterSchematic']">
+	<property name="CustomIcon" value="modMeleeWoodSplitterSchematic" />
+</append>	
+
+<append xpath="/items/item[@name='modMeleeGraveDiggerSchematic']">
+	<property name="CustomIcon" value="modMeleeGraveDiggerSchematic" />
+</append>	
+
+<remove xpath="/items/item[@name='meleeToolFireaxeSteel']/property[@name='CustomIconTint']"/>
+<remove xpath="/items/item[@name='meleeToolShovelSteel']/property[@name='CustomIconTint']"/>
+<set xpath="/items/item[@name='meleeToolFireaxeSteel']/property[@name='CustomIcon']/@value">meleeToolFireaxeSteel</set>
+<set xpath="/items/item[@name='meleeToolShovelSteel']/property[@name='CustomIcon']/@value">meleeToolShovelSteel</set>
+
+<!-- Change damage based on quality level -->
+<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
+<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
+<append xpath="/items/item/effect_group[@name='Base Effects']">
+	<passive_effect name="EntityDamage" operation="perc_add" value="0,0.5" tier="1,6"/>
+	<passive_effect name="BlockDamage" operation="perc_add" value="0,1" tier="1,6"/>
+</append>
+
+<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">4000</set>
+
+<set xpath="/items/item[@name='unlockBookMaster']/property[@name='EconomicValue']/@value">400</set>
+
+<append xpath="/items">
+<item name="meleeToolMower">
+	<property name="Description" value="Cut weeds in style!"/> 			
+	<property name="Tags" value="knife,melee,light,tool,meleeWeapon,perkTheHuntsman"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="DegradationBreaksAfter" value="true"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>				
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>				
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+	</property>			
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="10"/>
+		<passive_effect name="BlockRange" operation="base_set" value="10"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="0"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="2" tags="cropHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="wildCropsHarvest"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="300"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500,8000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1,1" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="25" tags="plants,leaves"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="0" tags="stone,earth,wood"/>
+	</effect_group>
+</item>
+</append>		
+
+
+<!-- Stone Axe Speed Boost -->
+<set xpath="/items/item[@name='meleeToolStoneAxe']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">80</set>
+
+<append xpath="/items/item/effect_group[@name='Base Effects']">
+	<passive_effect name="StaminaLoss" operation="perc_subtract" value="0,.15" tier="1,6"/>
+</append>
+<set xpath="/items/item/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@operation">base_set</set>
+
+<!-- Speed up Forge Melt times - Default '0.25', crafting times in forge - Default '0.5', and increase stored ore count to 50k - Default value = '30000' -->
+<set xpath="/items/item[@name='unit_iron']/property[@name='MeltTimePerUnit']/@value">0.12</set>
+<set xpath="/items/item[@name='unit_iron']/property[@name='CraftingIngredientTime']/@value">0.12</set>
+<set xpath="/items/item[@name='resourceForgedIron']/property[@name='CraftingIngredientTime']/@value">5</set>
+<set xpath="/items/item[@name='resourceForgedSteel']/property[@name='CraftingIngredientTime']/@value">7</set>
+<set xpath="/items/item[@name='resourceClayLump']/property[@name='CraftingIngredientTime']/@value">0.2</set>
+<set xpath="/items/item[@name='resourceRockSmall']/property[@name='CraftingIngredientTime']/@value">0.2</set>
+
+<append xpath="/items/item[@name='resourceRockSmall']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceScrapBrass']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceScrapLead']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceScrapIron']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceIronFragment']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceBrokenGlass']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceClayLump']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceCrushedSand']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>	
+<append xpath="/items/item[@name='resourceCandleStick']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>	
+<append xpath="/items/item[@name='resourceDoorKnob']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceRadiator']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceTrophy1']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='resourceTrophy2']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='toolAnvil']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolHuntingKnife']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolClawHammer']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeClubIron']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolMachete']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolPickaxeIron']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolWrench']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolShovelIron']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolShovelSteel']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolSledgehammer']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolFireaxeIron']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolFireaxeSteel']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolPickaxeSteel']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolHoeIron']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+<append xpath="/items/item[@name='meleeToolWireTool']">
+	<property name="MeltTimePerUnit" value="0.2"/>
+</append>
+	
+		<!-- Set crafting times -->
+<!-- <set xpath="/items/item/property[@name='CraftingIngredientTime']/@value">0.15</set> -->
+<append xpath="/items/item[@name='resourceCement']">
+	<property name="CraftingIngredientTime" value="0.05"/>
+</append>
+<append xpath="/items/item[@name='resourceConcreteMix']">
+	<property name="CraftingIngredientTime" value="0.05"/>
+</append>
+<append xpath="/items/item[@name='resourceCobblestones']">
+	<property name="CraftingIngredientTime" value="0.03"/>
+</append>
+<append xpath="/items/item[@name='resourceOilShale']">
+	<property name="CraftingIngredientTime" value="0.1"/>
+</append>
+<append xpath="/items/item[@name='resourceCrushedSand']">
+	<property name="CraftingIngredientTime" value="0.1"/>
+</append>
+
+</configs>
+<!-- <append xpath="/items/item[starts-with[@name, 'meleeTool'] and ends-with[@name, 'Iron']]/effect_group[@name='Base Effects']">
+	<passive_effect name="HarvestCount" operation="perc_add" value="0.1" tags="oreWoodHarvest"/>
+</append>
+<append xpath="/items/item[starts-with[@name, 'meleeTool'] and ends-with[@name, 'Steel']]/effect_group[@name='Base Effects']">
+	<passive_effect name="HarvestCount" operation="perc_add" value="0.2" tags="oreWoodHarvest"/>
+</append> -->
+
+<!-- <set xpath="/items/item[@name='meleeClubIron']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">17</set> -->
+	
+<!-- Zombie nerf -->
+<!-- General -->
+<!-- <set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Delay']/@value">1</set> -->
+
+<!-- Range -->
+<!-- 
+<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.25</set>
+<set xpath="/items/item[@name='meleeHandZombieCop']/property[@class='Action0']/property[@name='Range']/@value">1.4</set>
+<set xpath="/items/item[@name='meleeHandAnimalBear']/property[@class='Action0']/property[@name='Range']/@value">2</set>
+<set xpath="/items/item[@name='meleeHandAnimalZombieBear']/property[@class='Action0']/property[@name='Range']/@value">2</set>
+<set xpath="/items/item[@name='meleeHandAnimalSnake']/property[@class='Action0']/property[@name='Range']/@value">1</set>
+<set xpath="/items/item[@name='meleeHandAnimalWolf']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+<append xpath="/items/item[@name='meleeHandPlayer']/property[@class='Action0']">
+	<property name="Range" value="1.65"/>
+</append>	
+-->
+ 
+<!-- Nerfing Vultures -->
+<!-- 
+<set xpath="/items/item[@name='meleeHandAnimalZombieVulture']/property[@class='Action0']/property[@name='DamageEntity']/@value">1</set>
+<insertAfter xpath="/items/item[@name='meleeHandAnimalZombieVulture']/property[@class='Action0']/property[@name='Buff']" >
+	<property name="Buff_chance" value="0.05,0.015"/>
+</insertAfter>
+<set xpath="/items/item[@name='meleeHandAnimalZombieVulture']/effect_group[@name='Base Effects']/passive_effect[@name='BuffProcChance' and @tags='buffInjuryBleeding']/@value">0.15</set>
+<set xpath="/items/item[@name='meleeHandAnimalZombieVulture']/effect_group[@name='Base Effects']/passive_effect[@name='BuffProcChance' and @tags='buffIllInfection0']/@value">0.10</set>
+<remove xpath="/items/item[@name='meleeHandAnimalZombieVulture']/property[@class='Action1']"/>
+ -->

@@ -1,0 +1,8 @@
+chickenCoop,blocks,Block,New,Chicken Coop,,,,
+chickenCoopDesc,blocks,Block,New,Place this outside and wait for it attract a birdnest then harvest just like any other nest.,,,,
+chickenCoop2,blocks,Block,New,Chicken Coop 2,,,,
+chickenNest,blocks,Container,KgNone,Chicken Nest,,,,
+recipebookAnimalTraps,items,Book,New,Animal Traps,,,,
+recipebookAnimalTrapsDesc,items,Book,New,This book teaches you how to make chicken coops.,,,,
+animalFeed,items,Food,KgNone,Animal Feed,,,,
+animalFeedDesc,items,Food,KgNone,Animal feed is used for luring chickens into a chicken coop.,,,,

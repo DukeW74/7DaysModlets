@@ -1,0 +1,3 @@
+steelBars,blocks,Block,KgNone,Steel Bars,,,,,
+steelBarsCentered,blocks,Block,New,Steel Bars Centered,,,,,
+steelBarsDesc,blocks,Block,GrChanged,You can see and shoot through steel bars and they offer decent protection.,,,,,

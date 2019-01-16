@@ -1,0 +1,3 @@
+resourceIronStrips,items,Item,KgNone,Forged Iron Strips,,,,
+resourceSteelStrips,items,Item,KgNone,Forged Steel Strips,,,,
+resourceStripsDesc,items,Item,KgNone,"Can be used for repair only.",,,,

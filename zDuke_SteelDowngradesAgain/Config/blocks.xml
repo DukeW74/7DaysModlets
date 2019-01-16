@@ -1,0 +1,12 @@
+<configs>
+<insertAfter xpath="/blocks/block[@name='cobblestoneBlock']/property[@class='UpgradeBlock']">
+	<property name="DowngradeBlock" value="flagstoneBlock"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='concreteBlock']/property[@class='UpgradeBlock']">
+	<property name="DowngradeBlock" value="cobblestoneBlock"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='rConcreteBlock']/property[@class='UpgradeBlock']">
+	<property name="DowngradeBlock" value="concreteBlock"/>
+</insertAfter>
+
+</configs>

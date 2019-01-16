@@ -1,0 +1,98 @@
+<configs>
+<append xpath="/blocks">
+
+<block name="chickenCoop">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CustomIcon" value="chickenCoop" />
+	<property name="DescriptionKey" value="chickenCoopDesc" />
+	<property name="Material" value="Mwood" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="gable_inverted_half"/>
+	<property name="Mesh" value="cutout"/> 
+	<!-- <property name="Material" value="Mcorn" /> -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="Texture" value="381,68,381,381,381,381" />
+	<property name="Place" value="Door"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="15"/>
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="chickenNest"/>
+	<property name="UpgradeRated.Rate" value="7"/>
+	<property name="Group" value="Food/Cooking"/>
+	<property class="RepairItems">
+		<property name="wood" value="10" />
+	</property>
+	<drop event="Destroy" name="chickenCoop" count="1"/>
+</block>
+
+<block name="chickenNest">
+	<property name="CustomIcon" value="chickenNest" />
+	<property name="Class" value="Loot"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Model" value="Entities/LootContainers/birdnestPrefab" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="LootList" value="130"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<drop event="Destroy" name="chickenCoop" count="1"/>
+	<!-- <property name="Texture" value="529"/> -->
+	<property name="PlantGrowing.Next" value="chickenCoop"/>
+</block>
+
+</append>
+</configs>
+<!--
+	<block id="1680" name="chickenCoop">
+		<property name="DescriptionKey" value="chickenCoopDesc" />
+		<property name="LightOpacity" value="0" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="New" />
+		<property name="Model" value="cube_half" />
+		<property name="Texture" value="196,241,272,272,272,272" />
+		<property name="RotationAllowed" value="pivotOnFloor" />
+		<property name="Class" value="UpgradeRated" />
+		<property name="UpgradeRated.ToBlock" value="chickenCoop2" />
+		<property name="UpgradeRated.Rate" value="1" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Traps" />
+	</block>
+	<block id="1681" name="chickenCoop2">
+		<property name="CustomIcon" value="chickenCoop" />
+		<property name="LightOpacity" value="0" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="New" />
+		<property name="Model" value="cube_half" />
+		<property name="Texture" value="196,241,272,272,272,272" />
+		<property name="RotationAllowed" value="pivotOnFloor" />
+		<property name="Class" value="PlantGrowing" />
+		<property class="PlantGrowing">
+			<property name="FertileLevel" value="0" />
+			<property name="Next" value="chickenCoop" />
+			<property name="GrowthRate" value="80" />
+			<property name="LightLevelStay" value="0" />
+			<property name="IsRandom" value="false" />
+			<property name="IsGrowOnTopEnabled" value="true" />
+			<property name="GrowOnTop" value="chickenNest" param1="1" param2="chickenNest" />
+		</property>
+		<drop event="Destroy" name="chickenCoop" count="1" />
+		<drop event="Harvest" name="chicken" count="2" />
+	</block>
+	<block id="1682" name="chickenNest">
+		<property name="Class" value="Loot" />
+		<property name="LightOpacity" value="0" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="Ext3dModel" />
+		<property name="Mesh" value="models" />
+		<property name="Model" value="LootContainers/birdnest" param1="main_mesh" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="LootList" value="120" />
+		<drop event="Destroy" count="0" prob="1" />
+	</block>
+-->

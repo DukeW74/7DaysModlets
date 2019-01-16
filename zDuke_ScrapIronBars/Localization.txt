@@ -1,0 +1,3 @@
+scrapIronBars,blocks,Block,New,Scrap Iron Bars,,,,,,
+scrapIronBarsCentered,blocks,Block,New,Scrap Iron Bars Centered,,,,,,
+scrapIronBarsDesc,blocks,Block,GrChanged,You can see and shoot through iron bars and they offer decent protection.\nCan be upgraded to iron bars.,,,,,

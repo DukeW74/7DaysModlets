@@ -1,0 +1,41 @@
+<configs>
+
+<set xpath="/items/item/property[@name='RepairTools'][@value='resourceForgedSteel']/@value">resourceSteelStrips</set>
+<set xpath="/items/item/property[@name='RepairTools'][@value='resourceForgedIron']/@value">resourceIronStrips</set>
+
+	
+<append xpath="/items">
+<item name="resourceIronStrips">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="2"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value="0.2"/>
+	<property name="RepairAmount" value="27"/>
+	<property name="Group" value="Resources"/>
+	<property name="DescriptionKey" value="resourceStripsDesc" />
+</item>
+
+<item name="resourceSteelStrips">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="4"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientExp" value="15"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property name="RepairTime" value="0.4"/>
+	<property name="RepairAmount" value="40"/>
+	<property name="DescriptionKey" value="resourceStripsDesc" />
+</item>
+</append>
+
+<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items' and @value='resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail']/@value">,resourceIronStrips,resourceSteelStrips</append>
+<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items' and @value='resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers']/@value">,resourceIronStrips,resourceSteelStrips</append>
+</configs>

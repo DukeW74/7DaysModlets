@@ -1,0 +1,13 @@
+<configs>
+
+<append xpath="/recipes" >
+
+<recipe name="resourceIronStrips" count="10">
+	<ingredient name="resourceForgedIron" count="1" />
+</recipe>
+<recipe name="resourceSteelStrips" count="10">
+	<ingredient name="resourceForgedSteel" count="1" />
+</recipe>
+
+</append>
+</configs>

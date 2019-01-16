@@ -1,0 +1,56 @@
+<configs>
+<!-- empty, storage containers the player crafts-->
+<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">10,9</set>
+
+<append xpath="/lootcontainers" >	
+
+
+<!-- Cooler Sound -->
+<lootcontainer id="209" count="0" size="10,9" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<!-- Medicine Cabinet Sound -->
+<lootcontainer id="210" count="0" size="10,9" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<!-- Locker Sound -->
+<lootcontainer id="211" count="0" size="10,9" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<!-- Drawer Sound -->
+<lootcontainer id="212" count="0" size="10,9" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>	
+
+<!-- Gun Safe Sound -->
+<lootcontainer id="213" count="0" size="10,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>	
+
+<!-- Refer Sound -->
+<lootcontainer id="214" count="0" size="10,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<!-- File Cabinet Sound -->
+<lootcontainer id="215" count="0" size="10,9" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>	
+
+<!-- Mailbox Sound-->
+<lootcontainer id="216" count="0" size="10,9" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>	
+
+<!-- Cupboard Sound -->
+<lootcontainer id="217" count="0" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+
+</append>
+	
+</configs>

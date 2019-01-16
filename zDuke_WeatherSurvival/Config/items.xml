@@ -1,0 +1,242 @@
+<configs>
+	
+		<append xpath="/items">	
+	<!-- Warming Clothes -->
+<item name="flannelShirt20">
+	<property name="DescriptionKey" value="plaidShirtClothesGroupDesc"/>
+	<property name="Extends" value="sweatshirt"/>
+	<property name="Tags" value="upperbody,chest,clothing"/>
+	<property class="UMA">
+		<property name="Mesh" value="plaid_shirt"/>
+		<property name="Overlay0" value="plaid_shirt"/>
+		<property name="Layer" value="0"/>
+		<property name="Mask0" value="chest" param1="inner"/>
+		<property name="UISlot" value="Shirt"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="5"/>
+	</effect_group>
+</item>
+
+<item name="flannelShirt30">
+	<property name="DescriptionKey" value="plaidShirtClothesGroupDesc"/>
+	<property name="Extends" value="sweatshirt"/>
+	<property name="Tags" value="upperbody,chest,clothing"/>
+	<property class="UMA">
+		<property name="Mesh" value="plaid_shirt"/>
+		<property name="Overlay0" value="plaid_shirt"/>
+		<property name="Layer" value="0"/>
+		<property name="Mask0" value="chest" param1="inner"/>
+		<property name="UISlot" value="Shirt"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="30"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+	</effect_group>
+</item>
+
+<item name="flannelShirt40">
+	<property name="DescriptionKey" value="plaidShirtClothesGroupDesc"/>
+	<property name="Extends" value="sweatshirt"/>
+	<property name="Tags" value="upperbody,chest,clothing"/>
+	<property class="UMA">
+		<property name="Mesh" value="plaid_shirt"/>
+		<property name="Overlay0" value="plaid_shirt"/>
+		<property name="Layer" value="0"/>
+		<property name="Mask0" value="chest" param1="inner"/>
+		<property name="UISlot" value="Shirt"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="40"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="15"/>
+	</effect_group>
+</item>
+	<!-- Cooling Clothes -->		
+<item name="tankTop20"> <!-- sleevelessClothShirtMaster -->
+	<property name="Tags" value="upperbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- <property name="Encumbrance" value="0.001"/> -->
+	<property name="Material" value="Mcloth"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Weight" value="20"/>
+	<property name="FuelValue" value="4"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property class="UMA">
+		<property name="Mesh" value="base_chest"/>
+		<property name="Overlay0" value="torso"/>
+		<property name="Overlay0Tint" value="skin"/>
+		<property name="Overlay1" value="tanktop"/>
+		<property name="Overlay1Tint" value="255,255,255"/>
+		<property name="Layer" value="0"/>
+		<property name="Mask0" value="chest" param1="inner"/>
+		<property name="UISlot" value="Shirt"/>
+	</property>
+	<property name="DescriptionKey" value="tankTopClothesGroupDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+	</effect_group>
+</item>
+
+<item name="tankTop30"> <!-- sleevelessClothShirtMaster -->
+	<property name="Tags" value="upperbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- <property name="Encumbrance" value="0.001"/> -->
+	<property name="Material" value="Mcloth"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Weight" value="20"/>
+	<property name="FuelValue" value="4"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property class="UMA">
+		<property name="Mesh" value="base_chest"/>
+		<property name="Overlay0" value="torso"/>
+		<property name="Overlay0Tint" value="skin"/>
+		<property name="Overlay1" value="tanktop"/>
+		<property name="Overlay1Tint" value="255,255,255"/>
+		<property name="Layer" value="0"/>
+		<property name="Mask0" value="chest" param1="inner"/>
+		<property name="UISlot" value="Shirt"/>
+	</property>
+	<property name="DescriptionKey" value="tankTopClothesGroupDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
+	</effect_group>
+</item>
+
+<item name="tankTop40"> <!-- sleevelessClothShirtMaster -->
+	<property name="Tags" value="upperbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- <property name="Encumbrance" value="0.001"/> -->
+	<property name="Material" value="Mcloth"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Weight" value="20"/>
+	<property name="FuelValue" value="4"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property class="UMA">
+		<property name="Mesh" value="base_chest"/>
+		<property name="Overlay0" value="torso"/>
+		<property name="Overlay0Tint" value="skin"/>
+		<property name="Overlay1" value="tanktop"/>
+		<property name="Overlay1Tint" value="255,255,255"/>
+		<property name="Layer" value="0"/>
+		<property name="Mask0" value="chest" param1="inner"/>
+		<property name="UISlot" value="Shirt"/>
+	</property>
+	<property name="DescriptionKey" value="tankTopClothesGroupDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="15"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="40"/>
+	</effect_group>
+</item>
+
+<item name="leatherDusterRed">
+	<property name="DescriptionKey" value="leatherDusterRedDesc"/>
+	<property name="Extends" value="leatherDuster"/>
+	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="CustomIcon" value="leatherDuster"/>
+	<property name="CustomIconTint" value="255,0,0"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="255,0,0"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="100"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="100"/>
+	</effect_group>
+</item>
+
+<item name="leatherDusterGreen">
+	<property name="DescriptionKey" value="leatherDusterRedDesc"/>
+	<property name="Extends" value="leatherDuster"/>
+	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="CustomIcon" value="leatherDuster"/>
+	<property name="CustomIconTint" value="51,92,65"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="51,92,65"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="100"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="100"/>
+	</effect_group>
+</item>
+
+<item name="leatherDusterBlue">
+	<property name="DescriptionKey" value="leatherDusterRedDesc"/>
+	<property name="Extends" value="leatherDuster"/>
+	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="CustomIcon" value="leatherDuster"/>
+	<property name="CustomIconTint" value="110,173,255"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="110,173,255"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="100"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="100"/>
+	</effect_group>
+</item>
+
+<item name="leatherDusterWhite">
+	<property name="DescriptionKey" value="leatherDusterRedDesc"/>
+	<property name="Extends" value="leatherDuster"/>
+	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
+	<property name="DisplayType" value="clothing"/>
+	<property name="CustomIcon" value="leatherDuster"/>
+	<property name="CustomIconTint" value="255,229,204"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="255,229,204"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="100"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="100"/>
+	</effect_group>
+</item>
+		</append>
+<remove xpath="/items/item[@name='hpRunningShoes']/property[@name='CustomIconTint']"/>
+		
+<set xpath="/items/item[@name='tshirtZUWhite']/property[@name='CustomIcon']/@value">tshirtZUWhite</set>
+<set xpath="/items/item[@name='hpRunningShoes']/property[@name='CustomIcon']/@value">hpRunningShoes</set>
+<set xpath="/items/item[@name='hpRunningShoes']/property[@class='UMA']/property[@name='Overlay0Tint']/@value">255,0,0</set>
+
+</configs>

@@ -1,0 +1,13 @@
+<configs>
+
+<append xpath="/recipes" >
+
+<recipe name="scrapIronBarsCentered" count="1"> 
+	<ingredient name="resourceScrapIron" count="40"/>
+</recipe>
+<recipe name="scrapIronBars" count="1"> 
+	<ingredient name="resourceScrapIron" count="40"/>
+</recipe>
+
+</append>
+</configs>

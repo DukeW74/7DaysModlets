@@ -1,0 +1,72 @@
+<configs>
+
+<!-- <remove xpath="/blocks/block[@name='woodBars']/property[@name='Extends']"/>
+<remove xpath="/blocks/block[@name='ironBars']/property[@name='Extends']"/>
+<remove xpath="/blocks/block[@name='ironBarsCentered']/drop[@event='Destroy']"/> -->
+
+<append xpath="/blocks/block[@name='woodBars']">
+	<property name="Texture" value="84"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterExcludeAndStop" value="true"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property class="RepairItems"> <property name="resourceWood" value="4"/> </property>
+	<property name="DescriptionKey" value="woodBarsDesc"/>
+	<property name="FilterTags" value="fdecor,fother,fwindows,fdoors"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="scrapIronBars"/>
+		<property name="Item" value="resourceScrapIron"/>
+		<property name="ItemCount" value="20"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+</append>
+
+<append xpath="/blocks/block[@name='ironBarsCentered']">
+<property class="UpgradeBlock">
+	<property name="ToBlock" value="steelBarsCentered"/>
+	<property name="Item" value="resourceForgedSteel"/>
+	<property name="ItemCount" value="5"/>
+	<property name="UpgradeHitCount" value="4"/>
+</property>
+<property name="DowngradeBlock" value="scrapIronBarsCentered"/>
+</append>
+
+<!-- <insertAfter xpath="/blocks/block[@name='ironBarsCentered']/drop[@event='Harvest']"> -->
+	<!-- <drop event="Destroy" name="ironBarsCentered" count="1"/> -->
+<!-- </insertAfter> -->
+
+<append xpath="/blocks/block[@name='ironBars']">
+	<property name="CustomIcon" value="ironBars"/>
+	<property name="DisplayType" value="blockHardened" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Texture" value="446"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterExcludeAndStop" value="true"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property class="RepairItems"> <property name="resourceIronStrips" value="10"/> </property>
+	<drop event="Harvest" name="resourceScrapIron" count="32" tag="allHarvest"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="DescriptionKey" value="ironBarsDesc"/>
+	<property name="FilterTags" value="fdecor,fother,fwindows,fdoors"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelBars"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="5"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="DowngradeBlock" value="scrapIronBars"/>
+</append>
+
+<set xpath="/blocks/block[@name='woodBarsCentered']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">scrapIronBarsCentered</set>
+<set xpath="/blocks/block[@name='woodBarsCentered']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceScrapIron</set>
+<set xpath="/blocks/block[@name='woodBarsCentered']/property[@class='UpgradeBlock']/property[@name='ItemCount']/@value">20</set>
+<set xpath="/blocks/block[@name='woodBars']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">scrapIronBars</set>
+
+</configs>

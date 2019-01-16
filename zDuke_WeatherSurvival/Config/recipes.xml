@@ -1,0 +1,25 @@
+<configs>
+<append xpath="/recipes" >
+<recipe name="tankTop20" count="1" scrapable="False">
+	<ingredient name="resourceYuccaFibers" count="20" />
+</recipe>
+<recipe name="tankTop30" count="1" scrapable="False">
+	<ingredient name="resourceYuccaFibers" count="20" />
+</recipe>
+<recipe name="tankTop40" count="1" scrapable="False">
+	<ingredient name="resourceYuccaFibers" count="20" />
+</recipe>
+<recipe name="flannelShirt20" count="1" scrapable="False">
+	<ingredient name="resourceCloth" count="20" />
+</recipe>
+<recipe name="flannelShirt30" count="1" scrapable="False">
+	<ingredient name="resourceCloth" count="20" />
+</recipe>
+<recipe name="flannelShirt40" count="1" scrapable="False">
+	<ingredient name="resourceCloth" count="20" />
+</recipe>
+<recipe name="leatherDusterRed" count="1">
+	<ingredient name="resourceLeather" count="20"/>
+</recipe>
+</append>
+</configs>

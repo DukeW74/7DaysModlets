@@ -1,0 +1,94 @@
+<configs>
+	
+<!-- Remove Radiated Zombie Vultures -->
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='Radiated']" />
+	
+<!-- Increase or decrease Zombie Loot chance - Default is >.3< -->
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie')]/property[@name='LootDropProb']/@value">.07</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieMoeFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieLabFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='LootDropProb']/@value">0.20</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieYoFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSnowFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']/property[@name='LootDropProb']/@value">0.20</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieCheerleaderFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieOldTimerFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieFarmerFeral']/property[@name='LootDropProb']/@value">0.20</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieStripperFeral']/property[@name='LootDropProb']/@value">0.20</set>
+	
+<!-- Updates the Entityclasses to randomize knockdown get up speed -->
+<!-- By default, it's locked at a set .45 second value.  Fuck that. -->
+<!-- 
+	<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">1.0,10.0</set>
+	<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.0,10.0</set>
+ -->
+<!-- Backpack and Lootbag timers -->
+
+<!-- <set xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']/@value">3600</set> -->
+
+<!-- <set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">60</set> -->
+	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">300</set>	 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">900</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">300</set>	 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">900</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">300</set>	 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">900</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">300</set>	 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">900</set>
+
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.007</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLossMaxMult']/@value">0.0074</set>
+</configs>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rwgmixer>
+
+<insertAfter xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaMedium']">
+    <biome_generator name="hollowWorld">
+      <module name="aa" type="Billow">
+        <property name="frequency" value="0.00005"/>
+        <property name="lacunarity" value="2.0"/>
+        <property name="octaveCount" value="6"/>
+        <property name="noiseQuality" value="2"/>
+        <property name="persistence" value="0.75"/>
+      </module>
+      <module name="bb" type="RotateInput">
+        <property name="sourceModule" value="aa"/>
+        <property name="xAngle" value="0"/>
+        <property name="zAngle" value="1"/>
+      </module>
+      <module name="cc" type="TranslateInput">
+        <property name="sourceModule" value="bb"/>
+        <property name="z" value="1048"/>
+        <property name="y" value="1"/>
+        <property name="x" value="1024"/>
+      </module>
+      <module name="biasOutput" type="BiasOutput">
+        <property name="sourceModule" value="cc"/>
+        <property name="bias" value="0.75"/>
+      </module>
+      <module name="scaleOutput" type="ScaleOutput">
+        <property name="sourceModule" value="biasOutput"/>
+        <property name="scale" value="1"/>
+      </module>
+      <module name="dithering" type="FastTurbulence">
+        <property name="sourceModule" value="scaleOutput"/>
+        <property name="frequency" value="0.25"/>
+        <property name="power" value="40"/>
+        <property name="roughness" value="3"/>
+      </module>
+      <module name="jiggle" type="FastTurbulence">
+        <property name="sourceModule" value="dithering"/>
+        <property name="frequency" value="0.25"/>
+        <property name="power" value="60"/>
+        <property name="roughness" value="5"/>
+      </module>
+      <module name="clampOutput" type="ClampOutput">
+        <property name="sourceModule" value="jiggle"/>
+        <property name="bounds" value="0,1"/>
+      </module>
+      <module name="biomeOutput" type="BiomeIDMapper">
+        <property name="sourceModule" value="clampOutput"/>
+
+        <property name="biomemap0.Name" value="snow"/>
+        <property name="biomemap0.Range" value="0,0.08"/>
+
+        <property name="biomemap1.Name" value="pine_forest"/>
+        <property name="biomemap1.Range" value="0.08,0.5"/>
+
+        <property name="biomemap2.Name" value="burnt_forest"/>
+        <property name="biomemap2.Range" value="0.5,0.625"/>
+
+        <property name="biomemap3.Name" value="wasteland"/>
+        <property name="biomemap3.Range" value="0.625,1.0"/>
+        
+        <property name="biomemap4.Name" value="desert"/>
+        <property name="biomemap4.Range" value="1.0,1.1"/>
+      </module>
+      <output module="biomeOutput"/>
+    </biome_generator>
+</insertAfter>
+
+</rwgmixer>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  pine_forest  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaSmall']/module[@name='biomeOutput']/property[@name='biomemap0.Range']/@value">0.075,0.75</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  snow  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaSmall']/module[@name='biomeOutput']/property[@name='biomemap1.Range']/@value">0,0.075</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  wasteland  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaSmall']/module[@name='biomeOutput']/property[@name='biomemap2.Range']/@value">0.925,1.1</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  burnt_forest  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaSmall']/module[@name='biomeOutput']/property[@name='biomemap3.Range']/@value">0.75,0.85</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  desert  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaSmall']/module[@name='biomeOutput']/property[@name='biomemap4.Range']/@value">0.85,0.925</set> -->
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  pine_forest  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaMedium']/module[@name='biomeOutput']/property[@name='biomemap0.Range']/@value">0.075,0.75</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  snow  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaMedium']/module[@name='biomeOutput']/property[@name='biomemap1.Range']/@value">0,0.075</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  wasteland  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaMedium']/module[@name='biomeOutput']/property[@name='biomemap2.Range']/@value">0.925,1.1</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  burnt_forest  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaMedium']/module[@name='biomeOutput']/property[@name='biomemap3.Range']/@value">0.75,0.85</set> -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXX  desert  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- <set xpath="/rwgmixer/biome_generators/biome_generator[name='vanillaMedium']/module[@name='biomeOutput']/property[@name='biomemap4.Range']/@value">0.85,0.925</set> -->
+
