@@ -166,8 +166,7 @@
 	<property name="Extends" value="leatherDuster"/>
 	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="CustomIcon" value="leatherDuster"/>
-	<property name="CustomIconTint" value="255,0,0"/>
+	<property name="CustomIcon" value="leatherDusterRed"/>
 	<property name="EconomicValue" value="1200"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="255,0,0"/>
@@ -184,8 +183,7 @@
 	<property name="Extends" value="leatherDuster"/>
 	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="CustomIcon" value="leatherDuster"/>
-	<property name="CustomIconTint" value="51,92,65"/>
+	<property name="CustomIcon" value="leatherDusterGreen"/>
 	<property name="EconomicValue" value="1200"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="51,92,65"/>
@@ -202,8 +200,7 @@
 	<property name="Extends" value="leatherDuster"/>
 	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="CustomIcon" value="leatherDuster"/>
-	<property name="CustomIconTint" value="110,173,255"/>
+	<property name="CustomIcon" value="leatherDusterBlue"/>
 	<property name="EconomicValue" value="1200"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="110,173,255"/>
@@ -220,8 +217,7 @@
 	<property name="Extends" value="leatherDuster"/>
 	<property name="Tags" value="upperbody,lowerbody,chest,clothing"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="CustomIcon" value="leatherDuster"/>
-	<property name="CustomIconTint" value="255,229,204"/>
+	<property name="CustomIcon" value="leatherDusterWhite"/>
 	<property name="EconomicValue" value="1200"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="255,229,204"/>
