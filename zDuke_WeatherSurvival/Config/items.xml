@@ -220,7 +220,7 @@
 	<property name="CustomIcon" value="leatherDusterWhite"/>
 	<property name="EconomicValue" value="1200"/>
 	<property class="UMA">
-		<property name="Overlay0Tint" value="255,229,204"/>
+		<property name="Overlay0Tint" value="255,255,255"/>
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
