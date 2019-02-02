@@ -32,6 +32,7 @@
 <remove xpath="/items/item[@name='meleeToolShovelSteel']/property[@name='CustomIconTint']"/>
 <set xpath="/items/item[@name='meleeToolFireaxeSteel']/property[@name='CustomIcon']/@value">meleeToolFireaxeSteel</set>
 <set xpath="/items/item[@name='meleeToolShovelSteel']/property[@name='CustomIcon']/@value">meleeToolShovelSteel</set>
+<set xpath="/items/item[@name='modGunBowArrowRestSchematic']/property[@name='CustomIcon']/@value">modGunBowArrowRestSchematic</set>
 
 <!-- Change damage based on quality level -->
 <remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>

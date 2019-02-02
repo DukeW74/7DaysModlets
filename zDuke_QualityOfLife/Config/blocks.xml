@@ -5,9 +5,21 @@
 	<drop event="Harvest" name="resourceAnimalFat" count="2,4" prob="1" tag="butcherHarvest"/>
 </insertAfter>
 
+<set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy'][@name='resourceFemur']/@count">2</set>
+<set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy'][@name='resourceFemur']/@prob">1</set>
+
+<set xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy'][@name='resourceFemur']/@count">2</set>
+<set xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy'][@name='resourceFemur']/@prob">1</set>
+
 <insertAfter xpath="/blocks/block[@name='houseFrontDoor1_v1']/drop[@event='Harvest' and @name='resourceWood']" >
 	<drop event="Harvest" name="resourceDoorKnob" count="1" prob="1" tag="allHarvest"/>
 </insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='cntCollapsedChemistryStation']/drop[@event='Harvest' and @name='resourceWood']" >
+	<drop event="Harvest" name="toolBeaker" count="1" tag="salvageHarvest" />
+</insertAfter>
+
+<set xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest'][@name='resourceCrushedSand']/@count">20</set>
 
 <set xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">40</set>
 <set xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest' and @name='resourceIronFragment']/@count">15</set>

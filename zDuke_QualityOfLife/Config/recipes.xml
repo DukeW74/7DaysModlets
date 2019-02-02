@@ -7,6 +7,14 @@
 	<ingredient name="resourceScrapIron" count="5" />
 	<ingredient name="resourceWood" count="2" />
 </recipe>
+<recipe name="modMeleeSpikedClubSchematic" count="2">
+	<ingredient name="modMeleeSpikedClubSchematic" count="1"/>
+	<ingredient name="resourcePaper" count="4"/>
+</recipe>
+<recipe name="modGunMagClipSchematic" count="2">
+	<ingredient name="modGunMagClipSchematic" count="1"/>
+	<ingredient name="resourcePaper" count="4"/>
+</recipe>
 <recipe name="modGunBarrelExtenderSchematic" count="2">
 	<ingredient name="modGunBarrelExtenderSchematic" count="1"/>
 	<ingredient name="resourcePaper" count="4"/>
@@ -442,5 +450,40 @@
 	<ingredient name="cinderBlocks03" count="1"/>
 </recipe>
 
+<recipe name="modDyeRed" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyeGreen" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyeBlack" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyeBlue" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyeBrown" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyePink" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyePurple" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyeYellow" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
+<recipe name="modDyeOrange" craft_area="chemistryStation" count="1">
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>		
 </append>
 </configs>
